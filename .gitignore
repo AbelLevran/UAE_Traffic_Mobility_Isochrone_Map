@@ -1,0 +1,13 @@
+# Data Files
+traffic_data.csv
+*.csv
+*.parquet
+*.xlsx
+
+# Generated Maps
+*.html
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
