@@ -1,5 +1,16 @@
 # UAE Traffic Mobility Isochrone Map
 
+## 📖 Background & Problem Statement
+Traditional spatial analysis often relies on **euclidean distance (straight-line radius)** to estimate coverage or reachability. However, in real-world scenarios—especially in rapidly developing urban environments like the UAE—a simple 5-kilometer circle does not accurately represent how far a vehicle can travel.
+
+**The Problem:**
+- **Geographical Barriers:** Straight-line distances ignore physical barriers like rivers, highways without exits, or dead-end streets.
+- **Traffic Dynamics:** A 5 km trip on a congested city road takes significantly longer than a 5 km trip on an expressway.
+- **Service Level Agreements (SLAs):** Businesses (e.g., instant delivery, logistics) and emergency services operate on **time constraints**, not distance constraints. Promising a "15-minute delivery" requires knowing exactly where drivers can reach within that time frame under actual traffic conditions.
+
+**The Solution:**
+To solve this, we shift from distance-based to **time-based spatial analysis** by creating an **Isochrone Map**. By leveraging actual road network data and average travel speeds, an isochrone map calculates and visualizes the true polygon area reachable within specific time limits, providing highly actionable insights for decision-makers.
+
 ## 📌 Project Overview
 As a Data Scientist/Analyst working with spatial and mobility data, understanding the reachability of a specific location within a given timeframe is crucial. This project generates an **Isochrone Map** based on actual traffic mobility data in the United Arab Emirates (UAE). 
 
